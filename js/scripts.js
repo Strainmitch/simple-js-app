@@ -11,16 +11,12 @@ let pokemonList = [
     { ID: "395", name: "Empoleon", height: 1.70, type: ["water","steel"] }
 ];
 
-for (let i = 0; 
-    i < pokemonList.length; 
-    i++) {
-    if (pokemonList[i].height >=3) {
-        document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + "m) - Wow, that's big!" + "<br>")
-        }
-    else if (pokemonList[i].height >= 1.6 && pokemonList[i].height < 5) {
-        document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + "m) - That is a normal pokemon!" + "<br>")
-        }
-    else {
-        document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + "m) - That is a small pokemon!" + "<br>")
-        }
-}
+pokemonList.forEach(function(pokemon) {
+    if (pokemon.height >=5) {
+      document.write(pokemon.name + " (height: " + pokemon.height + "m) - Wow, that is a big Pokemon!!" + "<br>")
+    } else if (pokemon.height >= 1.6 && pokemon.height < 5) {
+      document.write(pokemon.name + " (height: " + pokemon.height + "m) - That is a normal Pokemon!" + "<br>")
+    } else {
+      document.write(pokemon.name + " (height: " + pokemon.height + "m) - That is a small pokemon!" + "<br>")
+    }
+  });
