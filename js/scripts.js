@@ -1,3 +1,4 @@
+let pokemonRepository = (function () {
 let pokemonList = [
     { ID: "6", name: "Charizard", height: 1.7, type: ["fire","flying"] },
     { ID: "7", name: "Squirtle", height: .50, type: ["water"] },
@@ -9,7 +10,21 @@ let pokemonList = [
     { ID: "91", name: "Cloyster", height: 1.49, type: ["fire","flying"] },
     { ID: "150", name: "Mewtwo", height: 2, type: ["psychic"] },
     { ID: "395", name: "Empoleon", height: 1.70, type: ["water","steel"] }
-];
+]
+
+function add(pokemon) {
+    pokemonList.push(pokemon);
+  }
+  
+  function getAll() {
+    return pokemonList;
+  }
+  
+  return {
+    add: add,
+    getAll: getAll
+  };
+  })();
 
 pokemonList.forEach(function(pokemon) {
     if (pokemon.height >=5) {
