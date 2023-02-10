@@ -13,8 +13,8 @@ let pokemonList = [
 ]
 
 function add(pokemon) {
-    pokemonList.push(pokemon);
-  }
+    pokemonList.push(pokemon); 
+  } 
   
   function getAll() {
     return pokemonList;
@@ -34,4 +34,8 @@ pokemonList.forEach(function(pokemon) {
     } else {
       document.write(pokemon.name + " (height: " + pokemon.height + "m) - That is a small pokemon!" + "<br>")
     }
+  });
+
+  pokemonRepository.getAll().forEach(function(pokemon){
+    document.write(pokemon.name + pokemon.height);
   });
