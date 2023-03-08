@@ -1,23 +1,23 @@
 
 :root {
-    --text-color: #ffffff;
-    --background-color: #000000;
-    --orange: #ffa500;
-  }
-  
-  body {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-  }
+  --text-color: #ffffff;
+  --background-color: #000000;
+  --orange: #ffa500;
+}
 
-  .button {
-    background-color: var(background-color);
-    color: var(text-color);
-    font-size: 24px;
-    text-align: center;
-    padding: 10px 24px;
-    margin: 10px 2px;
-    border: 2px solid var(orange)
-    border-radius: 50px;
-  }
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: orange;
+  background-color: black
+}
+
+.button-class {
+  color: var(--orange);
+  font-size: 24px;
+  text-align: center;
+  padding: 10px 24px;
+  margin: 10px 2px;
+  border-radius: 4px solid var(orange);
+}
