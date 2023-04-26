@@ -21,3 +21,16 @@ body {
   margin: 10px 2px;
   border-radius: 4px solid var(orange);
 }
+.modal-is-visible {
+  position: fixed;
+  padding: 20px;
+  box-sizing: border-box;
+  top: 20%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  background: ;
+  z-index: 999; 
+  overflow: auto;
+  display: grid;
+}
